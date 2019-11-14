@@ -1,0 +1,46 @@
+.goal {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.goal__section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 29px 20px 0 20px;
+
+  background-color: #f2f2f2;
+}
+
+.goal__title {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 37.02px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.goal__sentence {
+  @include content-style;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.goal__button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #111111;
+}

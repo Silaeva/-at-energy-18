@@ -1,0 +1,43 @@
+.offer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 28px;
+
+  background-image: url(../../img/index-background-mobile@1x.jpg);
+  background-size: 320px 305px;
+  background-repeat: no-repeat;
+}
+
+.offer__title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.offer__sentence {
+  margin: 0 0 30px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.offer__image {
+  margin-left: 20px;
+  margin-bottom: 3px;
+}
+
+.offer__button {
+  @include button;
+}
