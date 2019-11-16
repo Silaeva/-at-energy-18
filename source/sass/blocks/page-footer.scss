@@ -7,37 +7,6 @@
   padding: 30px 20px 20px 20px;
 }
 
-.contacts {
-  display: flex;
-  padding-bottom: 30px;
-}
-
-.contacts__invitation {
-  flex-basis: 50%;
-
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #212121;
-}
-
-.contacts__adress {
-  flex-basis: 50%;
-  display: flex;
-  flex-direction: column;
-}
-
-.adress__street,
-.adress__city {
-  padding: 0;
-  margin: 0;
-
-  line-height: 20px;
-  font-family: "Arial", sans-serif;
-  color: #444444;
-}
-
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -46,36 +15,4 @@
 
 .page-footer__logo {
   padding-bottom: 30px;
-}
-
-.social {
-  width: 280px;
-}
-
-.social__list {
-  display: flex;
-  min-height: 60px;
-
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
-
-  @include no-list;
-}
-
-.credit {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 22px;
-}
-
-.credit__name {
-
-  text-decoration: none;
-  color: #444444;
-}
-
-.uppercase {
-  text-transform: uppercase;
 }

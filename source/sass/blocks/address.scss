@@ -1,0 +1,15 @@
+.address {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.address__street,
+.address__city {
+  padding: 0;
+  margin: 0;
+
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}

@@ -1,0 +1,14 @@
+.contacts {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.contacts__invitation {
+  flex-basis: 50%;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #212121;
+}
