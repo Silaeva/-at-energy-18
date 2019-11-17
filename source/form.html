@@ -4,30 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38"
-        alt="Логотип Кэт энерджи">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38"
+          alt="Логотип Кэт энерджи">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-form">
@@ -46,12 +49,12 @@
           </li>
           <li class="about-cat__item">
             <label class="about-cat__label form-label" for="cat-weight">Вес (кг):<sup>*</sup></label>
-            <input class="about-cat__input input-text" type="text" name="cat-weight" id="cat-weight" placeholder="7"
+            <input class="about-cat__input input-text" type="number" name="cat-weight" id="cat-weight" placeholder="7"
               required>
           </li>
           <li class="about-cat__item">
             <label class="about-cat__label form-label" for="cat-age">Возраст (лет):</label>
-            <input class="about-cat__input input-text" type="text" name="cat-age" id="cat-age" placeholder="7">
+            <input class="about-cat__input input-text" type="number" name="cat-age" id="cat-age" placeholder="7">
           </li>
         </ul>
       </fieldset>
@@ -117,42 +120,37 @@
           </li>
         </ul>
       </fieldset>
-      <button class="form__button button" type="submit">Отправить заявку</button>
+      <button class="form__button" type="submit">Отправить заявку</button>
       <p class="form__required"><sup>*</sup>- Обязательные поля</p>
     </form>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__contacts contacts">
-      <b class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</b>
-      <p class="contacts__adress contacts__adress--street">ул. Большая<br> Конюшенная, д. 19/8</p>
-      <p class="contacts__adress contacts__adress--city">Санкт-Петербург</p>
-      <!--  <iframe src="" frameborder="0"></iframe>              -->
+      <b class="contacts__invitation">Приглашаем к сотрудничеству<br> дилеров!</b>
+      <div class="contacts__address address">
+        <p class="address__street">ул. Большая<br> Конюшенная, д. 19/8</p>
+        <p class="address__city">Санкт-Петербург</p>
+      </div>
     </div>
+    <!--  <iframe src="" frameborder="0"></iframe>              -->
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38"
-          alt="Логотип Кэт энерджи">
+        <img class="page-footer__logo-image" src="https://via.placeholder.com/191x38" width="128" height="24" alt="Логотип Кэт энерджи">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li class="social__item"><a class="social__link social__link--vk" href=""
-              aria-label="Кэт энерджи во вконтакте"></a></li>
-          <li class="social__item"><a class="social__link social__link--inst" href=""
-              aria-label="Кэт энерджи в инстаграме"></a></li>
-          <li class="social__item"><a class="social__link social__link--fb" href=""
-              aria-label="Кэт энерджи в фэйсбуке"></a></li>
+          <li class="social__item"><a class="social__link social__link--vk" href="" aria-label="Кэт энерджи во вконтакте"></a></li>
+          <li class="social__item"><a class="social__link social__link--inst" href="" aria-label="Кэт энерджи в инстаграме"></a></li>
+          <li class="social__item"><a class="social__link social__link--fb" href="" aria-label="Кэт энерджи в фэйсбуке"></a></li>
         </ul>
       </div>
       <div class="page-footer__credit credit">
-        <a class="credit__name" href="https://htmlacademy.ru/intensive/adaptive"><span class="uppercase">html</span>
-          Academy</a>
-        <a class="credit__logo" href="https://htmlacademy.ru/intensive/adaptive"><img
-            src="https://via.placeholder.com/27x34" width="27" height="34" alt="Ссылка на лендинг HTML Academy"></a>
+        <a class="credit__name" href="https://htmlacademy.ru/intensive/adaptive"><span class="uppercase">html</span> Academy</a>
+        <a class="credit__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Ссылка на лендинг HTML Academy"></a>
       </div>
     </div>
   </footer>
 
 </body>
-
 </html>

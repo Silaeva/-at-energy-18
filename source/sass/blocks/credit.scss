@@ -1,0 +1,16 @@
+.credit {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+}
+
+.credit__name {
+  text-decoration: none;
+  color: #444444;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

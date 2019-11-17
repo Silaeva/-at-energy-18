@@ -1,0 +1,30 @@
+@mixin no-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button {
+  margin: 0 auto 22px;
+  padding-top: 10px;
+  width: 280px;
+  min-height: 40px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #68b738;
+}
+
+@mixin content-style {
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+  font-family: "Arial", sans-serif;
+}

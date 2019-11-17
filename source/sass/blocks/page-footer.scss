@@ -1,0 +1,18 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 320px;
+  padding: 30px 20px 20px 20px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__logo {
+  padding-bottom: 30px;
+}

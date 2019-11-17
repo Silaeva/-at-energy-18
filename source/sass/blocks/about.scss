@@ -1,0 +1,26 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.about__list {
+  @include no-list;
+}
+
+.about__item {
+  @include content-style;
+  padding-bottom: 30px;
+  padding-left: 85px;
+}
