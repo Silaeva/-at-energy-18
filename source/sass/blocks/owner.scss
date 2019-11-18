@@ -1,0 +1,36 @@
+.owner {
+  @include zero-indent;
+  padding: 31px 0;
+
+  border: none;
+}
+
+.owner__legend {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.owner__list {
+  @include no-list;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 105px;
+}
+
+.owner__item {
+  display: flex;
+  align-items: center;
+}
+
+.owner__label {
+  @include form-label;
+}
+
+.owner__input {
+  @include input-text;
+}
+
+.owner__input[value] {
+  @include placeholder;
+}

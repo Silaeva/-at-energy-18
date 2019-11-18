@@ -1,0 +1,49 @@
+.numbers {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.numbers__term,
+.numbers__description {
+  @include zero-indent;
+}
+
+.numbers__term {
+  width: 124px;
+  padding: 15px 0;
+
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
+}
+
+.numbers__description {
+  position: absolute;
+
+  padding: 0 15px;
+
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+
+  background-color: $bg-color;
+}
+
+.numbers__description--left {
+  left: 18px;
+  top: 48px;
+}
+
+.numbers__description--right {
+  right: 16px;
+  top: 48px;
+}

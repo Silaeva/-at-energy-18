@@ -1,0 +1,32 @@
+.about-cat {
+  @include zero-indent;
+  margin-bottom: 24px;
+
+  border: none;
+}
+
+.about-cat__list {
+  @include no-list;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 165px;
+}
+
+.about-cat__item {
+  display: flex;
+  align-items: center;
+}
+
+.about-cat__input {
+  @include input-text;
+  appearance: textfield;
+}
+
+.about-cat__input[placeholder] {
+  @include placeholder;
+}
+
+.about-cat__label {
+  @include form-label;
+}

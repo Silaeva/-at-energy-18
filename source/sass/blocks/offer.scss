@@ -12,9 +12,8 @@
 }
 
 .offer__title {
-  margin: 0;
+  @include zero-indent;
   margin-bottom: 25px;
-  padding: 0;
 
   font-size: 36px;
   font-weight: 400;
@@ -23,8 +22,8 @@
 }
 
 .offer__sentence {
-  margin: 0 0 30px;
-  padding: 0;
+  @include zero-indent;
+  margin-bottom: 30px;
 
   font-size: 14px;
   line-height: 14px;

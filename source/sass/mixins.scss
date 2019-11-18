@@ -4,6 +4,11 @@
   list-style: none;
 }
 
+@mixin zero-indent {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin button {
   margin: 0 auto 22px;
   padding-top: 10px;
@@ -27,4 +32,31 @@
 
   text-align: left;
   font-family: "Arial", sans-serif;
+}
+
+@mixin form-label {
+  flex-shrink: 0;
+  margin-right: 15px;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+@mixin input-text {
+  padding-left: 15px;
+  flex-basis: auto;
+  min-height: 45px;
+  flex-grow: 1;
+
+  border: 1px solid #e6e6e6;
+}
+
+@mixin placeholder {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
 }

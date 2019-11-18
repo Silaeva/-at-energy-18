@@ -6,8 +6,7 @@
 
 .address__street,
 .address__city {
-  padding: 0;
-  margin: 0;
+  @include zero-indent;
 
   line-height: 20px;
   font-family: "Arial", sans-serif;
