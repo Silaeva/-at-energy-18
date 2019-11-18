@@ -2,3 +2,56 @@
   width: 280px;
   margin: 0 auto;
 }
+
+.extra__heading {
+  @include zero-indent;
+  margin-top: 31px;
+  margin-right: 24px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.extra__list {
+  @include no-list;
+}
+
+.extra__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  margin-bottom: -1px;
+
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.extra__name {
+  @include zero-indent;
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.extra__properties {
+  margin-bottom: 15px;
+  width: 280px;
+
+  line-height: 14px;
+  font-family: "Arial", sans-serif;
+}
+
+.extra__value {
+  text-align: right;
+}
+
+.extra__button {
+  @include button;
+  margin: 0;
+}

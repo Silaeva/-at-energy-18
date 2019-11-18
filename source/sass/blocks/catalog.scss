@@ -21,7 +21,9 @@
 }
 
 .catalog__main {
-  width: 280px;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .catalog__list {
@@ -46,6 +48,8 @@
 }
 
 .item__show-more {
+  padding-top: 80px;
+
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
