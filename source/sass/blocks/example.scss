@@ -1,5 +1,5 @@
 .example {
-  background-color: #f2f2f2;
+  background-color: $bg-color;
 }
 
 .example__wrapper {
@@ -11,8 +11,9 @@
 }
 
 .example__title {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
+  margin-bottom: 15px;
+  align-self: flex-start;
 
   font-size: 36px;
   line-height: 60px;
@@ -21,4 +22,12 @@
 
 .example__content {
   @include content-style;
+  margin-bottom: 20px;
+}
+
+.example__costs {
+  margin-bottom: 45px;
+
+  line-height: 20px;
+  text-transform: uppercase;
 }
