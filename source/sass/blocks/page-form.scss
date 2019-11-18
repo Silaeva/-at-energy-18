@@ -1,0 +1,24 @@
+.page-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px 35px 20px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-form__heading {
+  @include zero-indent;
+  align-self: flex-start;
+  margin-bottom: 35px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.page-form__text {
+  @include zero-indent;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}

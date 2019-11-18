@@ -1,0 +1,31 @@
+.other {
+  @include zero-indent;
+  margin-bottom: 34px;
+
+  border: none;
+}
+
+.other__legend {
+  font-size: 24px;
+  line-height: 24px;
+
+  margin-bottom: 30px;
+}
+
+.other__list {
+  @include no-list;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 157px;
+}
+
+.other__item {
+  display: flex;
+  align-items: center;
+}
+
+.other__label {
+  @include form-label;
+  padding-left: 47px;
+}
