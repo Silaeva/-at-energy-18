@@ -1,6 +1,9 @@
 .slider__image {
   margin-bottom: 35px;
+  width: 311px;
+  height: 232px;
 }
+
 
 .slider__buttons {
   display: flex;
@@ -32,4 +35,40 @@
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    width: 708px;
+  }
+
+  .slider__image {
+    display: block;
+    width: 677px;
+    height: 499px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+  }
+
+  .slider__buttons {
+    width: 570px;
+    margin-bottom: 75px;
+  }
+
+  .slider_button {
+    font-size: 20px;
+
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    width: 650px;
+  }
+
+  .slider__image {
+    margin-top: -50px;
+    margin-bottom: 42px;
+  }
 }
