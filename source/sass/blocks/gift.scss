@@ -29,3 +29,53 @@
 .gift__sentence {
   @include zero-indent;
 }
+
+@media (min-width: $tablet-width) {
+  .gift {
+    padding-top: 69px;
+    padding-bottom: 76px;
+  }
+
+  .gift__wrapper {
+    flex-direction: row;
+    //justify-content: flex-end;
+    align-items: center;
+    padding-right: 115px;
+
+    width: 708px;
+    min-height: 200px;
+
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-size: 708px 200px;
+  }
+
+  .gift__sentence {
+    width: 170px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    padding: 0;
+  }
+
+  .gift__wrapper {
+    flex-direction: column;
+    padding: 190px 0 0 0;
+    margin: 0;
+    width: 245px;
+    min-height: 289px;
+
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 245px 289px;
+  }
+
+  .gift__sentence {
+    width: 170px;
+    text-align: center;
+  }
+}
