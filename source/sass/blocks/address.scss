@@ -28,3 +28,10 @@
     margin-bottom: 25px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .address__street,
+  .address__city {
+    text-align: left;
+  }
+}

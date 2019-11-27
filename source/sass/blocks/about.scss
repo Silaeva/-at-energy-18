@@ -16,18 +16,20 @@
 
 .about__list {
   @include no-list;
-  position: relative;
 }
 
 .about__item {
   @include content-style;
+
+  position: relative;
+
   padding-bottom: 30px;
   padding-left: 80px;
 
   &::before {
     content: "";
     position: absolute;
-
+    top: 0;
     left: 0;
     width: 60px;
     height: 60px;
@@ -72,34 +74,8 @@
     line-height: 24px;
 
     &::before {
-      top: 0;
       width: 80px;
       height: 80px;
-    }
-  }
-
-  .about__item--what {
-    &::before {
-      left: 0;
-    }
-  }
-
-  .about__item--how {
-    &::before {
-      left: 380px;
-    }
-  }
-
-  .about__item--how-many {
-    &::before {
-      top: 330px;
-    }
-  }
-
-  .about__item--how-soon {
-    &::before {
-      left: 380px;
-      top: 330px;
     }
   }
 }
@@ -123,31 +99,5 @@
     padding-right: 0;
     padding-top: 111px;
     margin-bottom: 75px;
-  }
-
-  .about__item--what {
-    &::before {
-      left: 0;
-    }
-  }
-
-  .about__item--how {
-    &::before {
-      left: 325px;
-    }
-  }
-
-  .about__item--how-many {
-    &::before {
-      top: 0;
-      left: 650px;
-    }
-  }
-
-  .about__item--how-soon {
-    &::before {
-      left: 975px;
-      top: 0;
-    }
   }
 }
