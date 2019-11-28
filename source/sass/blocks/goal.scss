@@ -31,6 +31,8 @@
   @include content-style;
   padding-bottom: 24px;
 
+  color: #444444;
+
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -38,8 +40,76 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
+  font-size: 16px;
+  line-height: 16px;
   text-align: left;
   text-decoration: none;
   text-transform: uppercase;
   color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .goal {
+    width: 708px;
+  }
+
+  .goal__section {
+    text-align: left;
+    margin-bottom: 30px;
+    padding-top: 81px;
+    padding-left: 52px;
+  }
+
+  .goal__title {
+    @include zero-indent;
+    margin-bottom: 28px;
+
+    font-size: 36px;
+  }
+
+  .goal__sentence {
+    padding-bottom: 0;
+    padding-right: 280px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+  }
+
+  .goal__button {
+    padding-top: 63px;
+    min-height: 140px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goal {
+    width: 1220px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .goal__section {
+    width: 570px;
+    min-height: 372px;
+    padding: 81px 52px 0 52px;
+  }
+
+  .goal__title {
+    padding-left: 164px;
+    margin-bottom: 73px;
+  }
+
+  .goal__sentence {
+    padding-right: 0;
+  }
+
+  .goal__button {
+    padding-top: 35px;
+    min-height: 110px;
+  }
 }

@@ -17,3 +17,11 @@
 .uppercase {
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .credit {
+    width: 162px;
+    padding: 0;
+    margin-left: auto;
+  }
+}

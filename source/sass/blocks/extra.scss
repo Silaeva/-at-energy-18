@@ -55,3 +55,105 @@
   @include button;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .extra {
+    width: 708px;
+  }
+
+  .extra__heading {
+    margin: 0 38px 75px 39px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .extra__item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #e6e6e6;
+    padding: 25px 36px 27px 37px;
+  }
+
+  .extra__name {
+    margin-bottom: 24px;
+    width: 200px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .extra__button {
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .extra__properties {
+    padding: 0;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .extra__property {
+    width: 150px;
+    text-align: right;
+  }
+
+  .extra__value {
+    width: 75px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+
+  .extra__heading {
+    margin-left: 0;
+  }
+
+  .extra__item {
+    width: 895px;
+    min-height: 72px;
+    padding: 0;
+    align-items: center;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .extra__name {
+    margin-bottom: 0;
+    margin-right: auto;
+    width: 200px;
+  }
+
+  .extra__button {
+    flex-grow: 0;
+    width: 245px;
+  }
+
+  .extra__properties {
+    width: 325px;
+    margin-bottom: 0;
+  }
+
+  .extra__property {
+    text-align: left;
+  }
+
+  .extra__value {
+    width: 50px;
+    text-align: left;
+  }
+}

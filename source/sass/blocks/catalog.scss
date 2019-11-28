@@ -30,36 +30,38 @@
   @include no-list;
 }
 
-.product__properties {
-  width: 100%;
-  font-size: 12px;
-  line-height: 16px;
-  font-family: "Arial", sans-serif;
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .catalog__heading {
+    padding-top: 50px;
+    padding-bottom: 45px;
+
+    font-size: 60px;
+    text-align: left;
+
+    border: none;
+  }
+
+  .catalog__main {
+    padding: 120px 0 70px 0;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
-.product__value {
-  text-align: right;
-}
-
-.item--more {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.item__show-more {
-  padding-top: 80px;
-
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.item__more-flavors {
-  font-size: 12px;
-  line-height: 16px;
-  font-family: "Arial", sans-serif;
-  color: #444444;
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
