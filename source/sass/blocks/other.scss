@@ -29,3 +29,55 @@
   @include form-label;
   padding-left: 47px;
 }
+
+@media (min-width: $tablet-width) {
+  .other {
+    margin-bottom: 55px;
+  }
+
+  .other__legend {
+    @include form-legend--tablet;
+    padding-left: 40px;
+    padding-right: 100px;
+    margin-bottom: 55px;
+  }
+
+  .other__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-height: 112px;
+    margin-left: 40px;
+  }
+
+  .other__item {
+    width: 324px;
+    height: 40px;
+  }
+
+  .other__label {
+    @include form-label--tablet;
+    padding-left: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .other {
+    margin-bottom: 30px;
+  }
+
+  .other__list {
+    justify-content: flex-start;
+    min-height: 52px;
+    width: 1260px;
+  }
+
+  .other__item {
+    width: 285px;
+    margin-bottom: 30px;
+  }
+
+  .other__item:not(:nth-child(4n)) {
+    margin-right: 40px;
+  }
+}

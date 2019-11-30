@@ -34,6 +34,11 @@
   font-family: "Arial", sans-serif;
 }
 
+@mixin form-legend--tablet {
+  font-size: 36px;
+  line-height: 36px;
+}
+
 @mixin form-label {
   flex-shrink: 0;
   margin-right: 15px;
@@ -42,6 +47,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+}
+
+@mixin form-label--tablet {
+  font-size: 20px;
+  line-height: 20px;
 }
 
 @mixin input-text {
@@ -59,4 +69,9 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+}
+
+@mixin placeholder--tablet {
+  font-size: 20px;
+  line-height: 20px;
 }

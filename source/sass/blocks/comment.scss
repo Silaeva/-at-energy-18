@@ -23,3 +23,32 @@
 
   resize: none;
 }
+
+@media (min-width: $tablet-width) {
+  .comment {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 63px;
+  }
+
+  .comment__legend {
+    @include form-legend--tablet;
+
+    margin-bottom: 75px;
+  }
+
+  .comment__input {
+    @include placeholder--tablet;
+    padding-top: 15px;
+    padding-left: 20px;
+    min-width: 100%;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    width: 100%;
+  }
+}

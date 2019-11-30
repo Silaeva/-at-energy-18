@@ -30,3 +30,36 @@
 .about-cat__label {
   @include form-label;
 }
+
+@media (min-width: $tablet-width) {
+  .about-cat {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 72px;
+  }
+
+  .about-cat__list {
+    min-height: 195px;
+  }
+
+  .about-cat__label {
+    @include form-label--tablet;
+  }
+
+  .about-cat__input {
+    min-height: 52px;
+    padding-left: 20px;
+  }
+
+  .about-cat__input[placeholder] {
+    @include placeholder--tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-cat {
+    padding-right: 0;
+    width: 610px;
+  }
+}

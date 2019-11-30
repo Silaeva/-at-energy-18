@@ -34,3 +34,50 @@
 .owner__input[value] {
   @include placeholder;
 }
+
+@media (min-width: $tablet-width) {
+  .owner {
+    padding: 72px 40px 0 40px;
+    margin-bottom: 70px;
+  }
+
+  .owner__legend {
+    @include form-legend--tablet;
+  }
+
+  .owner__list {
+    min-height: 125px;
+  }
+
+  .owner__label {
+    @include form-label--tablet;
+  }
+
+  .owner__input {
+    min-height: 52px;
+    padding-left: 22px;
+  }
+
+  .owner__input[value] {
+    @include placeholder--tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner {
+    width: 100%;
+    padding: 72px 40px 0 40px;
+    margin-bottom: 70px;
+  }
+
+  .owner__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 52px;
+  }
+
+  .owner__input {
+    width: 486px;
+  }
+}
