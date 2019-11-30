@@ -22,3 +22,37 @@
   margin-bottom: 35px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .page-form {
+    align-items: flex-start;
+    padding: 45px 30px 72px 30px;
+    width: 768px;
+  }
+
+  .page-form__heading {
+    margin-bottom: 60px;
+
+    font-size: 60px;
+  }
+
+  .page-form__text {
+    padding-left: 40px;
+    margin-bottom: 65px;
+    width: 390px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form {
+    padding: 50px 0 82px 0;
+    width: 1300px;
+  }
+
+  .page-form__heading {
+    padding-left: 40px;
+  }
+}

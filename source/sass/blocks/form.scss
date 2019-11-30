@@ -12,7 +12,44 @@
 
 .form__required {
   font-family: "Arial", sans-serif;
-  line-height: 18px;
+  line-height: 16px;
   text-align: center;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 100%;
+  }
+
+  .form__wrapper {
+    display: flex;
+    padding-left: 40px;
+  }
+
+  .form__button {
+    width: 283px;
+    min-height: 52px;
+    margin-right: 60px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__required {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .form__button {
+    width: 568px;
+    margin-right: 85px;
+  }
 }

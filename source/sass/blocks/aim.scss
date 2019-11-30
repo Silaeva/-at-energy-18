@@ -19,3 +19,28 @@
   @include form-label;
   padding-left: 65px;
 }
+
+@media (min-width: $tablet-width) {
+  .aim {
+    margin-bottom: 71px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .aim__list {
+    min-height: 196px;
+    padding-top: 36px;
+    padding-bottom: 33px;
+  }
+
+  .aim__label {
+    @include form-label--tablet;
+    padding-left: 88px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .aim {
+    width: 570px;
+  }
+}
