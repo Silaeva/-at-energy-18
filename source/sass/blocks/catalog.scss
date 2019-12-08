@@ -8,8 +8,8 @@
 
 .catalog__heading {
   margin: 0;
-  padding-top: 31px;
-  padding-bottom: 35px;
+  padding-top: 14px;
+  padding-bottom: 28px;
   width: 100%;
 
   font-size: 36px;
@@ -48,7 +48,7 @@
   }
 
   .catalog__main {
-    padding: 120px 0 70px 0;
+    padding: 122px 0 66px 0;
   }
 
   .catalog__list {
@@ -63,5 +63,10 @@
     width: 1300px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .catalog__heading {
+    padding-top: 55px;
+    padding-bottom: 44px;
   }
 }

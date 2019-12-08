@@ -1,17 +1,30 @@
 .extra {
   width: 280px;
   margin: 0 auto;
+  padding-top: 28px;
 }
 
 .extra__heading {
+  position: relative;
+
   @include zero-indent;
-  margin-top: 31px;
-  margin-right: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
+  width: 250px;
 
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 248px;
+
+    width: 4000px;
+    height: 3px;
+    background-color: $main-color;
+  }
 }
 
 .extra__list {
@@ -31,7 +44,7 @@
 
 .extra__name {
   @include zero-indent;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   font-size: 16px;
   line-height: 16px;
@@ -45,6 +58,8 @@
 
   line-height: 14px;
   font-family: "Arial", sans-serif;
+
+  border-collapse: collapse;
 }
 
 .extra__value {
@@ -54,18 +69,39 @@
 .extra__button {
   @include button;
   margin: 0;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .extra {
     width: 708px;
+    padding-top: 0;
   }
 
   .extra__heading {
-    margin: 0 38px 75px 39px;
+    margin-bottom: 80px;
+    padding-left: 37px;
+    padding-right: 5px;
+    width: 411px;
 
     font-size: 36px;
     line-height: 36px;
+
+    background-color: #ffffff;
+
+    &::after {
+      z-index: -1;
+      top: 22px;
+      left: -500px;
+    }
   }
 
   .extra__item {
@@ -77,7 +113,7 @@
   }
 
   .extra__name {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     width: 200px;
 
     font-size: 20px;
@@ -101,6 +137,7 @@
   .extra__property {
     width: 150px;
     text-align: right;
+    padding-top: 4px;
   }
 
   .extra__value {
@@ -119,12 +156,17 @@
   }
 
   .extra__heading {
-    margin-left: 0;
+    margin-left: -40px; // отриц margin ?
+    padding-top: 9px;
+
+    &::after {
+      top: 31px;
+    }
   }
 
   .extra__item {
     width: 895px;
-    min-height: 72px;
+    min-height: 73px;
     padding: 0;
     align-items: center;
 
@@ -146,6 +188,7 @@
   .extra__properties {
     width: 325px;
     margin-bottom: 0;
+    margin-top: 4px;
   }
 
   .extra__property {

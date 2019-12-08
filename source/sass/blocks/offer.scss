@@ -23,7 +23,7 @@
 
 .offer__sentence {
   @include zero-indent;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   font-size: 14px;
   line-height: 14px;
@@ -34,13 +34,22 @@
 .offer__image {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   width: 280px;
   height: 270px;
 }
 
 .offer__button {
   @include button;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -50,15 +59,13 @@
     width: 708px;
     min-height: 810px;
     text-align: left;
-    padding-top: 0;
-
 
     background-image: none;
   }
 
   .offer__title {
-    padding-left: 90px;
-    padding-top: 50px;
+    padding-left: 88px;
+    padding-top: 24px;
     margin-bottom: 40px;
 
     font-size: 60px;
@@ -84,12 +91,12 @@
   .offer__button {
     position: absolute;
     z-index: 10;
-    top: 275px;
+    top: 282px;
     left: 90px;
 
-    width: 245px;
-    min-height: 52px;
-    padding-top: 16px;
+    width: 244px;
+    min-height: 51px;
+    padding-top: 15px;
 
     font-size: 20px;
     line-height: 20px;
@@ -98,27 +105,35 @@
 
 @media (min-width: $desktop-width) {
   .offer {
+    flex-wrap: wrap;
+    height: 644px;
     width: 1220px;
-    min-height: 640px;
+    min-height: 0;
+    padding-top: 0;
   }
 
   .offer__title {
-    padding-top: 85px;
+    padding-top: 90px;
     padding-left: 80px;
     width: 550px;
   }
 
-  .offer__image {
-    position: absolute;
-    z-index: -1;
-    right: 220px;
+  .offer__sentence {
+    padding-left: 80px;
+  }
 
+  .offer__image {
+    margin-top: 10px;
+    margin-left: -318px;
     width: 552px;
     height: 499px;
   }
 
   .offer__button {
-    top: 320px;
+    top: 324px;
     left: 80px;
+
+    width: 245px;
+    min-height: 52px;
   }
 }
