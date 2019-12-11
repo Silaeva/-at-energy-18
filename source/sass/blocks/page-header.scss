@@ -13,9 +13,20 @@
 
 .page-header__logo {
   display: block;
-  padding-top: 11px;
+  padding-top: 13px;
   padding-left: 20px;
-  padding-bottom: 13px;
+  padding-bottom: 11px;
+}
+
+.page-header__logo[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__logo-image {
@@ -58,7 +69,7 @@
       background-image: url("../../img/index-background-desktop@1x.jpg");
       background-size: 720px 696px;
       background-repeat: no-repeat;
-      background-position-x: calc(50% + 360px);
+      background-position-x: calc(50% + 359px);
     }
   }
 

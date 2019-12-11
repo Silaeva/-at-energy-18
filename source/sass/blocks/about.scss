@@ -1,13 +1,13 @@
 .about {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 22px;
   width: 280px;
 }
 
 .about__title {
   @include zero-indent;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   font-size: 36px;
   line-height: 60px;
@@ -23,8 +23,9 @@
 
   position: relative;
 
-  padding-bottom: 30px;
+  padding-top: 2px;
   padding-left: 80px;
+  margin-bottom: 24px;
 
   &::before {
     content: "";
@@ -37,10 +38,42 @@
   }
 }
 
+.about__item--leaf {
+  &::before {
+    background-image: url("../../img/advantage-leaf@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.about__item--powder {
+  &::before {
+    background-image: url("../../img/advantage-powder@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.about__item--dining {
+  &::before {
+    background-image: url("../../img/advantage-dining@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.about__item--clock {
+  &::before {
+    background-image: url("../../img/advantage-clock@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .about {
     width: 768px;
-    margin: 20px auto 51px;
+    margin: 29px auto 26px;
     padding-left: 30px;
     padding-right: 30px;
 
@@ -48,7 +81,7 @@
   }
 
   .about__title {
-    margin-bottom: 63px;
+    margin-bottom: 70px;
 
     font-size: 60px;
   }
@@ -65,10 +98,10 @@
     width: 325px;
     min-height: 235px;
     padding-left: 0;
-    padding-top: 118px;
+    padding-top: 112px;
     padding-right: 60px;
     padding-bottom: 0;
-    margin-bottom: 85px;
+    margin-bottom: 82px;
 
     font-size: 16px;
     line-height: 24px;
@@ -76,6 +109,48 @@
     &::before {
       width: 80px;
       height: 80px;
+    }
+
+    &::after {
+      content: "1";
+      position: absolute;
+      z-index: -1;
+      bottom: 46px;
+      left: 119px;
+
+      width: 70px;
+      height: 228px;
+
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281.07px;
+      line-height: 281.07px;
+      color: #f2f2f2;
+    }
+  }
+
+  .about__item:last-child,
+  .about__item:nth-last-child(2) {
+    margin-bottom: 52px;
+  }
+
+  .about__item--powder {
+    &::after {
+      content: "2";
+      left: 113px;
+    }
+  }
+
+  .about__item--dining {
+    &::after {
+      content: "3";
+      left: 113px;
+    }
+  }
+
+  .about__item--clock {
+    &::after {
+      content: "4";
+      left: 115px;
     }
   }
 }
@@ -98,6 +173,11 @@
     width: 245px;
     padding-right: 0;
     padding-top: 111px;
+    margin-bottom: 75px;
+  }
+
+  .about__item:last-child,
+  .about__item:nth-last-child(2) {
     margin-bottom: 75px;
   }
 }

@@ -1,13 +1,13 @@
 .gift {
-  padding-top: 39px;
+  padding-top: 40px;
   padding-bottom: 35px;
 }
 
 .gift__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  position: relative;
+
   text-align: center;
+  padding-top: 186px;
   padding-left: 50px;
   padding-right: 50px;
   margin: 0 auto;
@@ -24,6 +24,21 @@
   font-family: "Arial", sans-serif;
 
   color: #ffffff;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 65px;
+    left: 113px;
+
+    width: 55px;
+    height: 60px;
+
+    background-image: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 55px 60px;
+  }
 }
 
 .gift__sentence {
@@ -32,14 +47,12 @@
 
 @media (min-width: $tablet-width) {
   .gift {
-    padding-top: 69px;
+    padding-top: 70px;
     padding-bottom: 76px;
   }
 
   .gift__wrapper {
-    flex-direction: row;
-    //justify-content: flex-end;
-    align-items: center;
+    padding-top: 72px;
     padding-right: 115px;
 
     width: 708px;
@@ -49,11 +62,16 @@
     background-color: #68b738;
     background-repeat: no-repeat;
     background-size: 708px 200px;
+
+    &::before {
+      left: 91px;
+    }
   }
 
   .gift__sentence {
     width: 170px;
     text-align: left;
+    margin-left: auto;
   }
 }
 
@@ -64,7 +82,7 @@
 
   .gift__wrapper {
     flex-direction: column;
-    padding: 190px 0 0 0;
+    padding: 188px 0 0 0;
     margin: 0;
     width: 245px;
     min-height: 289px;
@@ -72,10 +90,15 @@
     background-image: url("../../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: 245px 289px;
+
+    &::before {
+      left: 96px;
+    }
   }
 
   .gift__sentence {
     width: 170px;
     text-align: center;
+    margin: 0 auto;
   }
 }

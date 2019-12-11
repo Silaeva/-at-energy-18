@@ -8,11 +8,12 @@
   align-items: center;
   width: 280px;
   margin: 0 auto;
+  padding-top: 17px;
 }
 
 .example__title {
   @include zero-indent;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   align-self: flex-start;
 
   font-size: 36px;
@@ -22,11 +23,12 @@
 
 .example__content {
   @include content-style;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  padding-right: 5px;
 }
 
 .example__costs {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 
   line-height: 20px;
   text-transform: uppercase;
@@ -39,7 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(#ffffff 0, #ffffff 620px, $bg-color 620px);
+    background: linear-gradient(#ffffff 0, #ffffff 592px, $bg-color 592px);
   }
 
   .example__wrapper {
@@ -48,13 +50,14 @@
   }
 
   .example__title {
-    margin-bottom: 55px;
+    margin-bottom: 63px;
 
     font-size: 60px;
   }
 
   .example__content {
     padding-right: 20px;
+    margin-bottom: 39px;
 
     color: #444444;
     font-size: 16px;
@@ -62,7 +65,13 @@
   }
 
   .example__costs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 13px;
+    min-height: 50px;
     width: 201px;
+
     font-size: 20px;
     line-height: 20px;
     text-align: end;
@@ -79,13 +88,14 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(#ffffff 0, #ffffff 138px, $bg-color 138px);
+    background: linear-gradient(#ffffff 0, #ffffff 135px, $bg-color 135px);
   }
 
   .example__wrapper {
     flex-direction: row;
     justify-content: space-between;
     width: 1220px;
+    padding-top: 0;
   }
 
   .example__desktop-column {
@@ -105,10 +115,13 @@
 
   .example__costs {
     width: 330px;
+    flex-direction: row;
+    align-items: center;
   }
 
   .example__wrapper-flex {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 24px;
   }
 }
