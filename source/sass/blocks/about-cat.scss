@@ -55,9 +55,9 @@
 @media (min-width: $tablet-width) {
   .about-cat {
     width: 768px;
-    padding-left: 63px;
-    padding-right: 74px;
-    margin-bottom: 72px;
+    padding-left: 71px;
+    padding-right: 68px;
+    margin-bottom: 74px;
   }
 
   .about-cat__list {
@@ -81,7 +81,12 @@
 @media (min-width: $desktop-width) {
   .about-cat {
     padding: 0;
+    padding-left: 2px;
     width: 570px;
-    margin-right: 95px;
+    margin-right: 80px;
+  }
+
+  .about-cat__list {
+    min-height: 197px;
   }
 }

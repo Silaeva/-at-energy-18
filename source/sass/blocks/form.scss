@@ -1,3 +1,7 @@
+.form {
+  max-width: 100%;
+}
+
 .form__button {
   display: block;
 
@@ -32,14 +36,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form {
-    width: 100vw;
-  }
-
   .form__wrapper {
     display: flex;
     padding-left: 0;
-    padding-right: 123px;
+    padding-right: 105px;
     margin: 0 auto;
     min-height: 60px;
   }
@@ -47,7 +47,7 @@
   .form__button {
     width: 283px;
     min-height: 52px;
-    margin-right: 63px;
+    margin-right: 65px;
 
     font-size: 20px;
     line-height: 20px;
@@ -68,7 +68,7 @@
   }
 
   .form__wrapper {
-    padding-right: 408px;
+    padding-right: 390px;
   }
 
   .form__button {

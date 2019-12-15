@@ -66,7 +66,7 @@
   .aim {
     width: 629px;
     margin: 0 auto 71px;
-    padding-right: 6px;
+    padding-left: 7px;
 
     border: none;
   }
@@ -104,11 +104,14 @@
   .aim {
     width: 570px;
     margin-left: 0;
-    padding-right: 16px;
+    padding-right: 0;
+    padding-left: 16px;
   }
 
 
   .aim__list {
-    margin-left: -16px;
+    padding-top: 36px;
+    padding-bottom: 31px;
+    margin-left: -17px;
   }
 }
