@@ -1,6 +1,13 @@
+.form {
+  max-width: 100%;
+}
+
 .form__button {
+  display: block;
+
   width: 280px;
   min-height: 40px;
+  margin: 0 auto 17px;
 
   font: inherit;
   text-transform: uppercase;
@@ -8,6 +15,17 @@
 
   background-color: #68b738;
   border: none;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .form__required {
@@ -18,19 +36,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form {
-    width: 100%;
-  }
-
   .form__wrapper {
     display: flex;
-    padding-left: 40px;
+    padding-left: 0;
+    padding-right: 105px;
+    margin: 0 auto;
+    min-height: 60px;
   }
 
   .form__button {
     width: 283px;
     min-height: 52px;
-    margin-right: 60px;
+    margin-right: 65px;
 
     font-size: 20px;
     line-height: 20px;
@@ -38,6 +55,8 @@
 
   .form__required {
     font-size: 16px;
+    margin-top: 12px;
+    margin-right: auto;
   }
 }
 
@@ -46,6 +65,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .form__wrapper {
+    padding-right: 390px;
   }
 
   .form__button {

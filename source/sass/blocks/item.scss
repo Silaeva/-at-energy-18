@@ -117,8 +117,6 @@
     flex-direction: column;
     width: 324px;
     min-height: 431px;
-    padding-left: 37px;
-    padding-right: 37px;
     margin-bottom: 140px;
 
     background-color: $bg-color;
@@ -126,6 +124,11 @@
     &::after {
       display: none;
     }
+  }
+
+  .item__wrapper {
+    padding-left: 37px;
+    padding-right: 37px;
   }
 
   .item:last-child,
@@ -140,17 +143,17 @@
 
   .item__link--big-can {
     margin-top: -82px;
-    width: 195px;
+    width: 324px;
     height: 208px;
   }
 
   .item__image {
-    width: 161px;
+    width: 324px;
     height: 172px;
   }
 
   .item__image[class*="big"] {
-    width: 195px;
+    width: 324px;
     height: 208px;
   }
 
@@ -216,8 +219,16 @@
   }
 
   .item__image {
-    width: 163px;
+    width: 245px;
     height: 174px;
+  }
+
+  .item__image[class*="big"] {
+    width: 245px;
+  }
+
+  .item__link--big-can {
+    width: 245px;
   }
 
   .item--more {
