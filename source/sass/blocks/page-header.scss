@@ -71,6 +71,25 @@
       background-repeat: no-repeat;
       background-position-x: calc(50% + 359px);
     }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      z-index: -3;
+      top: 0;
+
+      width: 100%;
+      height: 696px;
+
+      background: linear-gradient(to left, #64a83b 0, #64a83b 50%, #ffffff 50%);
+    }
+
+    @media (min-resolution: $retina-dppx) {
+      &::before {
+        background-image: url("../../img/index-background-desktop@2x.jpg");
+      }
+    }
   }
 
   .page-header__wrapper {

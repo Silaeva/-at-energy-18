@@ -39,6 +39,10 @@
     background-repeat: no-repeat;
     background-size: 55px 60px;
   }
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .gift__sentence {
@@ -65,6 +69,10 @@
 
     &::before {
       left: 91px;
+    }
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/gift-photo-tablet@2x.jpg");
     }
   }
 
@@ -93,6 +101,10 @@
 
     &::before {
       left: 96px;
+    }
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/gift-photo-desktop@2x.jpg");
     }
   }
 

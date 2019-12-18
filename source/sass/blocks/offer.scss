@@ -1,4 +1,6 @@
 .offer {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -9,6 +11,23 @@
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-size: 320px 305px;
   background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+
+    width: 320px;
+    height: 305px;
+
+    background-color: #64a83b;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .offer__title {
@@ -61,6 +80,10 @@
     text-align: left;
 
     background-image: none;
+
+    &::before {
+      display: none;
+    }
   }
 
   .offer__title {
