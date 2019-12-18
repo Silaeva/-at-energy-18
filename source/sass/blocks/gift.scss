@@ -14,7 +14,7 @@
   width: 280px;
   min-height: 289px;
 
-  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-color: #68b738;
   background-repeat: no-repeat;
   background-size: 280px 289px;
@@ -35,9 +35,13 @@
     width: 55px;
     height: 60px;
 
-    background-image: url("../../img/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-size: 55px 60px;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
 }
 
@@ -58,13 +62,17 @@
     width: 708px;
     min-height: 200px;
 
-    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-color: #68b738;
     background-repeat: no-repeat;
     background-size: 708px 200px;
 
     &::before {
       left: 91px;
+    }
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
     }
   }
 
@@ -87,12 +95,16 @@
     width: 245px;
     min-height: 289px;
 
-    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: 245px 289px;
 
     &::before {
       left: 96px;
+    }
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
   }
 

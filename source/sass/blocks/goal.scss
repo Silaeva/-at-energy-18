@@ -57,7 +57,7 @@
     width: 35px;
     height: 49px;
 
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     background-size: 35px 49px;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@
     width: 67px;
     height: 28px;
 
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
     background-size: 67px 28px;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,14 +102,14 @@
   text-transform: uppercase;
   color: #111111;
 
-  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-image: url("../img/icon-right-arrow-long.svg");
   background-size: 25px 11px;
   background-repeat: no-repeat;
   background-position: 97px 22px;
 
   &:hover,
   &:focus {
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
     background-size: 33px 11px;
   }
 
