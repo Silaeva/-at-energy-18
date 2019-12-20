@@ -22,15 +22,14 @@
 
   transition: 0.1s;
 
-  /*&:hover,
-   &:focus {
-     box-shadow: 0 -0 15px -5px rgba(0, 0, 0, 0.5);
-     transform: scale(1.1);
-   }
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 
-   &:active {
-     opacity: 0.3;
-  }*/
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .item__image {
