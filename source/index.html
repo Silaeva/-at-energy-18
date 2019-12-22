@@ -6,15 +6,20 @@
   <title>HTML Academy: Кэт энерджи - Главная</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <script>
     document.createElement("picture");
 
   </script>
-  <script src="js/picturefill.min.js" async></script>
+  <script src="js/picturefill.min.js" async=""></script>
 </head>
 
 <body>
+
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header page-header--index">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
@@ -129,8 +134,8 @@
               <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
               <source media="(min-width:1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
               <source media="(min-width:768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="slider__image slider__image--before slider__image--before-show" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320"
-                height="240" alt="Фотография пухлого кота Бориса">
+              <img class="slider__image slider__image--before slider__image--before-show" src="img/before-mobile@1x.png"
+                srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Фотография пухлого кота Бориса">
             </picture>
             <picture>
               <source type="image/webp" media="(min-width: 1300px)"
@@ -140,8 +145,8 @@
               <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
               <source media="(min-width:1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
               <source media="(min-width:768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img class="slider__image slider__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320"
-                height="240" alt="Фотография стройного кота Бориса">
+              <img class="slider__image slider__image--after" src="img/after-mobile@1x.png"
+                srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Фотография стройного кота Бориса">
             </picture>
             <div class="slider__buttons">
               <button class="slider_button slider_button--past" type="button">Было</button>
@@ -177,21 +182,21 @@
             <li class="social__item">
               <a class="social__link social__link--vk" href="" aria-label="Кэт энерджи во вконтакте">
                 <svg width="22" height="12">
-                  <use xlink:href="img/sprite.svg#icon--vk"></use>
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--inst" href="" aria-label="Кэт энерджи в инстаграме">
+              <a class="social__link social__link-inst" href="" aria-label="Кэт энерджи в инстаграме">
                 <svg width="16" height="16">
-                  <use xlink:href="img/sprite.svg#icon--inst"></use>
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--fb" href="" aria-label="Кэт энерджи в фэйсбуке">
                 <svg width="10" height="19">
-                  <use xlink:href="img/sprite.svg#icon--fb"></use>
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -202,7 +207,7 @@
             Academy</a>
           <a class="credit__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <svg width="26.943" height="34.09">
-              <use xlink:href="img/sprite.svg#logo--htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy-svg"></use>
             </svg>
           </a>
         </div>
