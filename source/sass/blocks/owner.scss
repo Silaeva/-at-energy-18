@@ -112,6 +112,10 @@
   @include placeholder;
 }
 
+.owner__input::-ms-clear { //убирает крестик очистки в ИЕ
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .owner {
     margin-bottom: 66px;

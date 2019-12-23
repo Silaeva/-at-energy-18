@@ -39,6 +39,11 @@
   }
 }
 
+.about-cat__input::-webkit-outer-spin-button,
+.about-cat__input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
 .about-cat__input[placeholder] {
   @include placeholder;
 }
