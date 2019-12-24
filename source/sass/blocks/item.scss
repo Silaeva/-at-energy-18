@@ -41,6 +41,7 @@
   @include button;
   flex-basis: 100%;
   margin-bottom: 25px;
+  padding-bottom: 10px;
 
   font-size: 16px;
   line-height: 20px;
@@ -160,7 +161,7 @@
   .item__button {
     flex-basis: 40px;
     width: 249px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   .item--more {
@@ -213,7 +214,7 @@
   }
 
   .item__button {
-    margin: 0 0 40px;
+    margin: 0 0 39px;
     width: 169px;
   }
 

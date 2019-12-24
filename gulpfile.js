@@ -15,6 +15,18 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var htmlmin = require("gulp-htmlmin");
+var jsmin = require("gulp-uglify");
+
+gulp.task("htmlmin", function() {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("jsmin", function() {
+  return gulp.src("source/js/*.js")
+    .pipe(gulp.dest("build"));
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -104,7 +116,9 @@ gulp.task("copy", function () {
   "copy",
   "css",
   "sprite",
-  "html"
+  "html",
+  "htmlmin",
+  "jsmin"
   ));
 
 gulp.task("start", gulp.series("build", "server"));
