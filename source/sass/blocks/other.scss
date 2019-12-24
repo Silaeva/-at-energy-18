@@ -32,7 +32,7 @@
 .other__legend {
   @include zero-indent;
   width: 167px;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 
   font-weight: 400;
   font-size: 24px;
@@ -104,7 +104,7 @@
 
 @media (min-width: $tablet-width) {
   .other {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 
     &::before {
       top: 23px;

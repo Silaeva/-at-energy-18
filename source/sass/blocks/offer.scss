@@ -51,15 +51,17 @@
 }
 
 .offer__image {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
   width: 280px;
   height: 270px;
 }
 
 .offer__button {
   @include button;
+  padding-bottom: 12px;
 
   &:hover,
   &:focus {
@@ -78,6 +80,7 @@
     width: 708px;
     min-height: 810px;
     text-align: left;
+    padding-top: 30px;
 
     background-image: none;
 
@@ -115,10 +118,10 @@
     position: absolute;
     z-index: 10;
     top: 282px;
-    left: 90px;
+    left: 89px;
 
-    width: 244px;
-    min-height: 51px;
+    width: 245px;
+    min-height: 52px;
     padding-top: 15px;
 
     font-size: 20px;
