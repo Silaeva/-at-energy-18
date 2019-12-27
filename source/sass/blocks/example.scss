@@ -23,7 +23,7 @@
 
 .example__content {
   @include content-style;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   padding-right: 5px;
 }
 
@@ -41,7 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(#ffffff 0, #ffffff 592px, $bg-color 592px);
+    background: linear-gradient(#ffffff 0, #ffffff 592px, transparent 592px), linear-gradient(to left, #eaeaea 0, #eaeaea 50%, $bg-color 50%);
   }
 
   .example__wrapper {
@@ -50,7 +50,7 @@
   }
 
   .example__title {
-    margin-bottom: 64px;
+    margin-bottom: 65px;
 
     font-size: 60px;
   }
@@ -88,7 +88,8 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(#ffffff 0, #ffffff 135px, $bg-color 135px);
+    background: linear-gradient(#ffffff 0, #ffffff 135px, transparent 135px),
+      linear-gradient(to left, #eaeaea 0, #eaeaea 28%, $bg-color 28%);
   }
 
   .example__wrapper {

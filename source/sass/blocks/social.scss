@@ -1,20 +1,17 @@
 .social {
+  @include no-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 62px;
   width: 280px;
   padding-left: 73px;
   padding-right: 82px;
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-}
-
-.social__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 62px;
-
-  @include no-list;
 }
 
 .social__link--vk svg {
@@ -50,12 +47,9 @@
   .social {
     padding: 0;
     width: 125px;
+    min-height: 28px;
 
     border: none;
-  }
-
-  .social__list {
-    min-height: 28px;
   }
 
   .social__link--vk svg {

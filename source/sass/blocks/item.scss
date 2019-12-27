@@ -3,17 +3,11 @@
 
   display: flex;
   flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: -1px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-
-    width: 320px;
-    height: 1px;
-    background-color: #ededed;
-  }
+  border: 1px solid #ededed;
 }
 
 .item__link {
@@ -40,7 +34,7 @@
 .item__button {
   @include button;
   flex-basis: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding-bottom: 10px;
 
   font-size: 16px;
@@ -82,7 +76,7 @@
     content: "";
     position: absolute;
     top: 26px;
-    left: 125px;
+    left: 145px;
 
     width: 30px;
     height: 30px;
@@ -118,12 +112,10 @@
     width: 324px;
     min-height: 431px;
     margin-bottom: 140px;
+    padding: 0;
 
     background-color: $bg-color;
-
-    &::after {
-      display: none;
-    }
+    border: none;
   }
 
   .item__wrapper {

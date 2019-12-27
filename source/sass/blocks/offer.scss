@@ -18,11 +18,14 @@
     position: absolute;
     z-index: -1;
     top: 0;
+    left: 50%;
 
-    width: 320px;
+    width: calc(100vw - 18px);
     height: 305px;
 
     background-color: #64a83b;
+
+    transform: translateX(-50%);
   }
 
   @media (min-resolution: $retina-dppx) {
@@ -54,7 +57,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   width: 280px;
   height: 270px;
 }

@@ -1,6 +1,6 @@
 .aim {
   @include zero-indent;
-  margin: 0 auto 28px;
+  margin: 0 auto 42px;
   width: 320px;
 
   border: 1px solid #ededed;
@@ -46,10 +46,15 @@
   }
 }
 
-.aim__input:hover + .aim__label,
-.aim__input:focus + .aim__label {
+.aim__input:hover + .aim__label {
   &::before {
     border-color: #bcbcbc;
+  }
+}
+
+.aim__input:focus + .aim__label {
+  &::before {
+    border-color: #848282;
   }
 }
 
@@ -65,7 +70,7 @@
 @media (min-width: $tablet-width) {
   .aim {
     width: 629px;
-    margin: 0 auto 71px;
+    margin: 0 auto 97px;
     padding-left: 7px;
 
     border: none;
@@ -95,7 +100,7 @@
 
   .aim__input:checked + .aim__label {
     &::before {
-      background: radial-gradient(circle, #68b738 0, #68b738 9px, #ffffff 9px);
+      background: radial-gradient(circle, #68b738 0, #68b738 10px, #ffffff 10px);
     }
   }
 }
@@ -105,6 +110,7 @@
     width: 570px;
     margin-left: 0;
     padding-right: 0;
+    margin-bottom: 92px;
     padding-left: 16px;
   }
 
