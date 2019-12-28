@@ -25,7 +25,7 @@ gulp.task("htmlmin", function() {
 
 gulp.task("jsmin", function() {
   return gulp.src("source/js/*.js")
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("css", function () {
@@ -115,10 +115,10 @@ gulp.task("copy", function () {
   "clean",
   "copy",
   "css",
-  "sprite",
-  "html",
   "htmlmin",
-  "jsmin"
+  "jsmin",
+  "sprite",
+  "html"
   ));
 
 gulp.task("start", gulp.series("build", "server"));

@@ -2,24 +2,12 @@
   @include zero-indent;
   position: relative;
 
-  margin-bottom: 28px;
+  margin-bottom: 41px;
   width: 100vw;
   max-width: 100%;
 
   border: none;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 13px;
-    left: 0;
-    z-index: -1;
-
-    width: 100%;
-    height: 3px;
-
-    background: linear-gradient(to right, transparent 0, transparent 160px, $main-color 160px);
-  }
+  border-top: 3px solid $main-color;
 }
 
 .owner__wrapper {
@@ -30,8 +18,11 @@
 
 .owner__legend {
   @include zero-indent;
+  width: 223px;
+  margin-top: -15px;
   margin-bottom: 34px;
-  width: 203px;
+  margin-left: -20px;
+  padding-left: 20px;
 
   font-weight: 400;
   font-size: 24px;
@@ -44,7 +35,6 @@
   @include no-list;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 105px;
 }
 
@@ -53,6 +43,10 @@
 
   display: flex;
   align-items: center;
+}
+
+.owner__item:not(:last-child) {
+  margin-bottom: 14px;
 }
 
 .owner__label {
@@ -64,11 +58,11 @@
 .owner__input {
   @include input-text;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: #cdcdcd;
   }
 
+  &:focus,
   &:active {
     border: 2px solid #444444;
   }
@@ -100,6 +94,7 @@
   fill: #222222;
 }
 
+.owner__input:focus + svg,
 .owner__input:active + svg {
   fill: $main-color;
 }
@@ -108,23 +103,17 @@
   fill: #ff8282;
 }
 
-.owner__input[value] {
+.owner__input[placeholder] {
   @include placeholder;
 }
 
-.owner__input::-ms-clear { //убирает крестик очистки в ИЕ
+.owner__input::-ms-clear {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
   .owner {
-    margin-bottom: 66px;
-
-    &::before {
-      top: 25px;
-
-      background-color: $main-color;
-    }
+    margin-bottom: 85px;
   }
 
   .owner__wrapper {
@@ -136,7 +125,9 @@
   .owner__legend {
     @include form-legend--tablet;
     width: 595px;
-    padding-left: 28px;
+    margin-top: -28px;
+    margin-left: 0;
+    padding-left: 38px;
     margin-bottom: 76px;
   }
 
@@ -144,6 +135,10 @@
     min-height: 125px;
     padding-left: 41px;
     padding-right: 54px;
+  }
+
+  .owner__item:not(:last-child) {
+    margin-bottom: 18px;
   }
 
   .owner__label {
@@ -180,11 +175,7 @@
 
 @media (min-width: $desktop-width) {
   .owner {
-    margin-bottom: 67px;
-
-    &::before {
-      top: 17px;
-    }
+    margin-bottom: 70px;
   }
 
   .owner__wrapper {
@@ -195,13 +186,21 @@
 
   .owner__legend {
     padding-left: 32px;
-    margin-top: -5px;
-    margin-left: -7px;
+    margin-top: -26px;
+    margin-left: 0;
     width: 592px;
   }
 
+  .owner__item:last-child {
+    margin-bottom: 18px;
+  }
+
+  .owner__label {
+    padding-bottom: 0;
+  }
+
   .owner__label[for="owner-email"] {
-    margin-right: 20px;
+    margin-right: 25px;
   }
 
   .owner__list {

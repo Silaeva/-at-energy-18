@@ -1,7 +1,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 0;
-  right: 0;
+  left: calc(50% + 95px);
 
   width: 65px;
   height: 65px;
@@ -17,6 +17,9 @@
   }
 }
 
+.main-nav__toggle--nojs {
+  display: none;
+}
 
 .main-nav--closed .main-nav__toggle {
   background-image: url("../img/icon-mobile-menu.svg");

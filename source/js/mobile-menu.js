@@ -4,6 +4,7 @@ var toggle = menu.querySelector(".main-nav__toggle");
 if (menu) {
   menu.classList.remove("main-nav--opened");
   menu.classList.add("main-nav--closed");
+  toggle.classList.remove("main-nav__toggle--nojs");
 };
 
 toggle.addEventListener("click", function(evt) {

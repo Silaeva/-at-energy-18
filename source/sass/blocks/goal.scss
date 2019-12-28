@@ -20,6 +20,8 @@
   &::before {
     content: "";
     position: absolute;
+    left: 23px;
+    top: 24px;
 
     width: 50px;
     height: 50px;
@@ -84,7 +86,7 @@
 
 .goal__sentence {
   @include content-style;
-  padding-bottom: 21px;
+  padding-bottom: 23px;
 
   color: #444444;
 
@@ -93,6 +95,7 @@
 
 .goal__button {
   padding-top: 18px;
+  padding-right: 150px;
   padding-bottom: 23px;
 
   font-size: 16px;
@@ -131,7 +134,7 @@
 
     &::before {
       top: 91px;
-      right: 62px;
+      left: 446px;
 
       width: 200px;
       height: 200px;
@@ -141,7 +144,7 @@
 
   .goal__title {
     @include zero-indent;
-    margin-bottom: 24px;
+    margin-bottom: 27px;
 
     font-size: 36px;
   }
@@ -186,7 +189,9 @@
 
   .goal__button {
     padding-top: 57px;
+    padding-right: 520px;
     min-height: 140px;
+    vertical-align: middle;
 
     font-size: 20px;
     line-height: 20px;
@@ -263,6 +268,7 @@
 
   .goal__button {
     padding-top: 32px;
+    padding-right: 350px;
     min-height: 100px;
 
     background-position: 131px 37px;

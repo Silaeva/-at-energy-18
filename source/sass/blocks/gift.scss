@@ -8,8 +8,9 @@
 
   text-align: center;
   padding-top: 186px;
-  padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 50px;
   margin: 0 auto;
   width: 280px;
   min-height: 289px;
@@ -58,6 +59,7 @@
   .gift__wrapper {
     padding-top: 72px;
     padding-right: 115px;
+    padding-bottom: 30px;
 
     width: 708px;
     min-height: 200px;
@@ -90,7 +92,7 @@
 
   .gift__wrapper {
     flex-direction: column;
-    padding: 188px 0 0 0;
+    padding: 188px 0 30px 0;
     margin: 0;
     width: 245px;
     min-height: 289px;
