@@ -12,13 +12,16 @@
   @include no-list;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 164px;
 }
 
 .about-cat__item {
   display: flex;
   align-items: center;
+}
+
+.about-cat__item:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .about-cat__input {
@@ -57,6 +60,10 @@
 
   .about-cat__list {
     min-height: 195px;
+  }
+
+  .about-cat__item:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .about-cat__label {

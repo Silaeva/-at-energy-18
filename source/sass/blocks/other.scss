@@ -36,13 +36,16 @@
   @include no-list;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 145px;
 }
 
 .other__item {
   display: flex;
   align-items: center;
+}
+
+.other__item:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .other__label {
@@ -100,13 +103,14 @@
 
 @media (min-width: $tablet-width) {
   .other {
-    margin-bottom: 21px;
+    margin-bottom: 0;
   }
 
   .other__wrapper {
     width: 768px;
     padding-left: 29px;
     padding-right: 30px;
+    margin-bottom: 26px;
   }
 
   .other__legend {
@@ -121,7 +125,7 @@
   .other__list {
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-between;
+    justify-content: space-between;
     min-height: 112px;
     margin-left: 40px;
   }
@@ -129,6 +133,11 @@
   .other__item {
     width: 324px;
     height: 40px;
+  }
+
+  .other__item:not(:last-child),
+  .other__item:last-child {
+    margin-bottom: 30px;
   }
 
   .other__label {
@@ -147,11 +156,7 @@
 
 @media (min-width: $desktop-width) {
   .other {
-    margin-bottom: 31px;
-
-    &::before {
-      top: 22px;
-    }
+    margin-bottom: 34px;
   }
 
   .other__wrapper {

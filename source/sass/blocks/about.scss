@@ -186,11 +186,21 @@
     margin-bottom: 75px;
   }
 
+  .about__list {
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+
   .about__item {
     width: 245px;
     padding-right: 0;
     padding-top: 111px;
     margin-bottom: 75px;
+  }
+
+  .about__item:not(:nth-child(4n)) {
+    margin-right: 80px;
   }
 
   .about__item:last-child,

@@ -26,7 +26,7 @@
 }
 
 .page-footer__logo {
-  padding-top: 39px;
+  padding-top: 42px;
   padding-bottom: 28px;
 
   cursor: pointer;
@@ -56,6 +56,7 @@
 
 .page-footer__map {
   position: absolute;
+  left: 0;
   z-index: 1;
   top: 115px;
 
@@ -75,9 +76,13 @@
   }
 
   .page-footer__wrapper {
+    box-sizing: border-box;
     flex-direction: row;
+    align-items: flex-start;
     width: 708px;
     min-height: 150px;
+
+    padding-top: 60px;
   }
 
   .page-footer__logo {
@@ -86,6 +91,7 @@
   }
 
   .page-footer__logo-image {
+    margin-top: 5px;
     width: 128px;
     height: 24px;
   }

@@ -35,7 +35,6 @@
   @include no-list;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 105px;
 }
 
@@ -44,6 +43,10 @@
 
   display: flex;
   align-items: center;
+}
+
+.owner__item:not(:last-child) {
+  margin-bottom: 14px;
 }
 
 .owner__label {
@@ -104,7 +107,7 @@
   @include placeholder;
 }
 
-.owner__input::-ms-clear { //убирает крестик очистки в ИЕ
+.owner__input::-ms-clear {
   display: none;
 }
 
@@ -132,6 +135,10 @@
     min-height: 125px;
     padding-left: 41px;
     padding-right: 54px;
+  }
+
+  .owner__item:not(:last-child) {
+    margin-bottom: 18px;
   }
 
   .owner__label {
@@ -168,7 +175,7 @@
 
 @media (min-width: $desktop-width) {
   .owner {
-    margin-bottom: 90px;
+    margin-bottom: 70px;
   }
 
   .owner__wrapper {
@@ -182,6 +189,10 @@
     margin-top: -26px;
     margin-left: 0;
     width: 592px;
+  }
+
+  .owner__item:last-child {
+    margin-bottom: 18px;
   }
 
   .owner__label {
