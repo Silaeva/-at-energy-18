@@ -7,7 +7,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 44px;
+    top: 42px;
     left: 0;
 
     width: 100%;
@@ -27,8 +27,8 @@
   position: relative;
 
   @include zero-indent;
-  margin-bottom: 35px;
-  width: 250px;
+  margin-bottom: 33px;
+  width: 248px;
 
   font-size: 24px;
   line-height: 24px;
@@ -80,6 +80,7 @@
 .extra__button {
   @include button;
   margin: 0;
+  padding-top: 12px;
   padding-bottom: 10px;
 
   &:hover,
@@ -89,6 +90,24 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@-moz-document url-prefix("") {
+  .extra__heading {
+    margin-bottom: 34px;
+  }
+
+  .extra__button {
+    padding-top: 10px;
+  }
+
+  .extra__item {
+    padding-bottom: 17px;
+  }
+
+  .extra__wrapper {
+    padding-top: 27px;
   }
 }
 
@@ -138,6 +157,9 @@
 
   .extra__button {
     flex-grow: 1;
+
+    padding-top: 10px;
+
     font-size: 16px;
     line-height: 20px;
   }
@@ -179,7 +201,7 @@
 
   .extra__heading {
     margin-left: -40px;
-    padding-top: 9px;
+    padding-top: 8px;
   }
 
   .extra__item {

@@ -10,6 +10,12 @@
   border-top: 3px solid $main-color;
 }
 
+@-moz-document url-prefix("") {
+  .comment {
+    margin-bottom: 41px;
+  }
+}
+
 .comment__wrapper {
   width: 320px;
   padding-left: 17px;
@@ -44,13 +50,14 @@
   border: 1px solid #e6e6e6;
 
   resize: none;
+  outline-style: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: #cdcdcd;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     border: 2px solid #444444;
   }
 }
@@ -91,6 +98,12 @@
 @media (min-width: $desktop-width) {
   .comment {
     margin-bottom: 87px;
+  }
+
+  @-moz-document url-prefix("") {
+    .comment {
+      margin-bottom: 90px;
+    }
   }
 
   .comment__wrapper {

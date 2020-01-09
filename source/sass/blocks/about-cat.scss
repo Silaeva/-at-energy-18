@@ -8,6 +8,12 @@
   border: none;
 }
 
+@-moz-document url-prefix("") {
+  .about-cat {
+    margin-bottom: 22px;
+  }
+}
+
 .about-cat__list {
   @include no-list;
   display: flex;
@@ -26,18 +32,19 @@
 
 .about-cat__input {
   @include input-text;
+  outline-style: none;
 
-  &:hover,
-  &:focus {
-    border-color: #cdcdcd;
-  }
-
-  &:active {
-    border: 2px solid #444444;
+  &:hover {
+    border: 1px solid #cdcdcd;
   }
 
   &:invalid {
-    border-color: #ff8282;
+    border: 2px solid #ff8282;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid #444444;
   }
 }
 

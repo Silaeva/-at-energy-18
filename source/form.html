@@ -53,12 +53,11 @@
         <ul class="about-cat__list">
           <li class="about-cat__item">
             <label class="about-cat__label" for="cat-name">Имя:<sup>*</sup></label>
-            <input class="about-cat__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required=""
-              autofocus="">
+            <input class="about-cat__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" autofocus="">
           </li>
           <li class="about-cat__item">
             <label class="about-cat__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
-            <input class="about-cat__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required="">
+            <input class="about-cat__input" type="text" name="cat-weight" id="cat-weight" placeholder="7">
           </li>
           <li class="about-cat__item">
             <label class="about-cat__label" for="cat-age">Возраст (лет):</label>
@@ -92,7 +91,7 @@
             <li class="owner__item">
               <label class="owner__label" for="owner-email">E-mail:<sup>*</sup></label>
               <input class="owner__input owner__input--email" type="email" name="email" id="owner-email"
-                placeholder="kuklachev@gmail.com" required="">
+                placeholder="kuklachev@gmail.com">
               <svg class="owner__icon owner__icon--email" width="17" height="13">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
@@ -100,7 +99,7 @@
             <li class="owner__item">
               <label class="owner__label" for="owner-tel">Телефон:<sup>*</sup></label>
               <input class="owner__input owner__input--tel" type="tel" name="phone" id="owner-tel"
-                placeholder="8 (960) 900-60-90" required="">
+                placeholder="8 (960) 900-60-90" minlength="11">
               <svg class="owner__icon owner__icon--tel" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
@@ -171,7 +170,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1574330837908!5m2!1sru!2sru"
         allowfullscreen=""></iframe>
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="index.html">
           <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"
             alt="Логотип Кэт энерджи">
         </a>
@@ -216,6 +215,8 @@
 
   </script>
   <script src="js/picturefill.min.js" async=""></script>
+  <script src ="js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
 </body>
 
 </html>

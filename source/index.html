@@ -109,13 +109,16 @@
               Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
               по 16 часов в день.</p>
             <div class="example__wrapper-flex">
-              <dl class="example__progress numbers">
-                <dt class="numbers__term">5 кг</dt>
-                <dd class="numbers__description numbers__description--left">снижение<br> веса</dd>
-
-                <dt class="numbers__term">60 дней</dt>
-                <dd class="numbers__description numbers__description--right">затрачено<br> времени</dd>
-              </dl>
+              <div class="example__progress numbers">
+                <div class="numbers__cell">
+                  <span class="numbers__term">5 кг</span>
+                  <span class="numbers__description numbers__description--left">снижение<br> веса</span>
+                </div>
+                <div class="numbers__cell">
+                  <span class="numbers__term">60 дней</span>
+                  <span class="numbers__description numbers__description--right">затрачено<br> времени</span>
+                </div>
+              </div>
               <p class="example__costs">
                 <span>Затраты на питание:</span>
                 <span>15 000 руб.</span>
@@ -229,6 +232,8 @@
 
   </script>
   <script src="js/picturefill.min.js" async=""></script>
+  <script src ="js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
 </body>
 
 </html>

@@ -86,7 +86,7 @@
       left: 50%;
       bottom: 0;
 
-      width: calc(100vw - 17px);
+      width: calc(100vw - 18px);
       height: 1px;
 
       background-color: #e6e6e6;
@@ -175,7 +175,7 @@
     width: 1220px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 40px;
+    padding-top: 43px;
 
     &::after {
       display: none;
@@ -183,7 +183,7 @@
   }
 
   .about__title {
-    margin-bottom: 75px;
+    margin-bottom: 72px;
   }
 
   .about__list {
@@ -195,7 +195,7 @@
   .about__item {
     width: 245px;
     padding-right: 0;
-    padding-top: 111px;
+    padding-top: 112px;
     margin-bottom: 75px;
   }
 
