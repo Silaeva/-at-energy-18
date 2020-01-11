@@ -69,14 +69,22 @@
     border-color: #cdcdcd;
   }
 
-  &:invalid {
+  /*&:invalid {
     border: 2px solid #ff8282;
-  }
+  }*/ /*см .input--error*/
 
   &:focus,
   &:active {
     border: 2px solid #444444;
   }
+}
+
+.input--error-js {
+  border: 2px solid #ff8282;
+}
+
+.input--error-js + svg {
+  fill: #ff8282;
 }
 
 .owner__icon--email {
@@ -106,9 +114,9 @@
   fill: $main-color;
 }
 
-.owner__input:invalid + svg {
+/*.owner__input:invalid + svg {
   fill: #ff8282;
-}
+}*/ /*см .input--error*/
 
 .owner__input[placeholder] {
   @include placeholder;
