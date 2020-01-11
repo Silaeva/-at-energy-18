@@ -10,6 +10,12 @@
   border-top: 3px solid $main-color;
 }
 
+@-moz-document url-prefix("") {
+  .owner {
+    margin-bottom: 39px;
+  }
+}
+
 .owner__wrapper {
   width: 320px;
   padding: 0 20px 0 18px;
@@ -57,19 +63,28 @@
 
 .owner__input {
   @include input-text;
+  outline-style: none;
 
   &:hover {
     border-color: #cdcdcd;
   }
 
+  /*&:invalid {
+    border: 2px solid #ff8282;
+  }*/ /*см .input--error*/
+
   &:focus,
   &:active {
     border: 2px solid #444444;
   }
+}
 
-  &:invalid {
-    border-color: #ff8282;
-  }
+.input--error-js {
+  border: 2px solid #ff8282;
+}
+
+.input--error-js + svg {
+  fill: #ff8282;
 }
 
 .owner__icon--email {
@@ -99,9 +114,9 @@
   fill: $main-color;
 }
 
-.owner__input:invalid + svg {
+/*.owner__input:invalid + svg {
   fill: #ff8282;
-}
+}*/ /*см .input--error*/
 
 .owner__input[placeholder] {
   @include placeholder;
@@ -201,6 +216,10 @@
 
   .owner__label[for="owner-email"] {
     margin-right: 25px;
+  }
+
+  .owner__label[for="owner-tel"] {
+    margin-right: 18px;
   }
 
   .owner__list {

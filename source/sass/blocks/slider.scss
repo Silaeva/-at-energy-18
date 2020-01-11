@@ -1,5 +1,6 @@
 .slider__image {
-  margin-bottom: 30px;
+  display: block;
+  margin-bottom: 33px;
   width: 320px;
   height: 240px;
 }
@@ -83,10 +84,11 @@
 
   .slider__image {
     display: block;
-    width: 677px;
-    height: 499px;
+    width: 690px;
+    height: 517px;
     margin: 0 auto;
-    margin-bottom: 29px;
+    margin-bottom: 13px;
+    margin-left: 17px;
   }
 
   .slider__image--before {
@@ -112,6 +114,7 @@
 
   .slider_button {
     font-size: 20px;
+    padding-top: 7px;
     padding-bottom: 7px;
 
     border-bottom: 1px dotted #bebebe;
@@ -141,7 +144,7 @@
   }
 
   .slider__toggle {
-    top: -4px;
+    top: 0;
     left: 60px;
 
     width: 34px;
@@ -176,11 +179,13 @@
   }
 
   .slider__image {
-    margin-top: -45px;
-    margin-bottom: 48px;
+    margin-top: -55px;
+    margin-bottom: 33px;
+    margin-left: 0;
   }
 
   .slider__buttons {
     margin-right: 0;
+    margin-bottom: 65px;
   }
 }

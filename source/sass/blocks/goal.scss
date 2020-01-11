@@ -121,6 +121,12 @@
   }
 }
 
+@-moz-document url-prefix("") {
+  .goal__sentence {
+    padding-bottom: 21px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .goal {
     width: 708px;
@@ -202,6 +208,14 @@
   .goal__section:last-child .goal__button {
     background-position: 126px 62px;
   }
+
+
+  @-moz-document url-prefix("") {
+    .goal__button {
+      padding-top: 55px;
+      min-height: 136px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -231,7 +245,7 @@
 
   .goal__title {
     padding-left: 162px;
-    margin-bottom: 73px;
+    margin-bottom: 76px;
   }
 
   .goal__title--slim {

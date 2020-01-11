@@ -26,7 +26,7 @@
 }
 
 .page-footer__logo {
-  padding-top: 42px;
+  padding-top: 38px;
   padding-bottom: 28px;
 
   cursor: pointer;
@@ -82,7 +82,7 @@
     width: 708px;
     min-height: 150px;
 
-    padding-top: 60px;
+    padding-top: 57px;
   }
 
   .page-footer__logo {
@@ -91,7 +91,7 @@
   }
 
   .page-footer__logo-image {
-    margin-top: 5px;
+    margin-top: 7px;
     width: 128px;
     height: 24px;
   }
@@ -131,5 +131,15 @@
     top: 0;
 
     height: 400px;
+  }
+
+  @-moz-document url-prefix("") {
+    .page-footer__logo-image {
+      margin-top: 5px;
+    }
+
+    .page-footer__wrapper {
+      padding-top: 59px;
+    }
   }
 }

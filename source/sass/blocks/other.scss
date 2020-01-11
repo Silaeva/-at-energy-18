@@ -159,6 +159,12 @@
     margin-bottom: 34px;
   }
 
+  @-moz-document url-prefix("") {
+    .other {
+      margin-bottom: 32px;
+    }
+  }
+
   .other__wrapper {
     width: 1300px;
     padding-left: 8px;
