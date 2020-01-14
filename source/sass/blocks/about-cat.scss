@@ -45,6 +45,7 @@
   &:active,
   &:focus {
     border: 2px solid #444444;
+    padding-left: 14px;
   }
 }
 
@@ -59,9 +60,9 @@
 
 @media (min-width: $tablet-width) {
   .about-cat {
-    width: 768px;
-    padding-left: 71px;
-    padding-right: 68px;
+    width: 708px;
+    padding-left: 40px;
+    padding-right: 38px;
     margin-bottom: 74px;
   }
 
@@ -81,6 +82,11 @@
   .about-cat__input {
     min-height: 52px;
     padding-left: 20px;
+
+    &:active,
+    &:focus {
+      padding-left: 19px;
+    }
   }
 
   .about-cat__input[placeholder] {

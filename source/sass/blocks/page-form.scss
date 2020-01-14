@@ -44,19 +44,19 @@
   }
 
   .page-form__heading {
-    width: 768px;
+    width: 708px;
     margin-bottom: 56px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0;
+    padding-right: 0;
 
     font-size: 60px;
   }
 
   .page-form__text {
-    padding-left: 70px;
+    padding-left: 40px;
     padding-right: 300px;
     margin-bottom: 65px;
-    width: 768px;
+    width: 708px;
 
     text-align: left;
 
@@ -71,13 +71,13 @@
   }
 
   .page-form__heading {
-    padding-left: 40px;
-    width: 1300px;
+    padding-left: 0;
+    width: 1220px;
   }
 
   .page-form__text {
-    width: 1300px;
-    padding-left: 40px;
-    padding-right: 900px;
+    width: 1220px;
+    padding-left: 0;
+    padding-right: 870px;
   }
 }

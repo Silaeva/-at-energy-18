@@ -59,6 +59,7 @@
   &:active,
   &:focus {
     border: 2px solid #444444;
+    padding-top: 12px;
   }
 }
 
@@ -68,9 +69,9 @@
   }
 
   .comment__wrapper {
-    width: 768px;
-    padding-left: 70px;
-    padding-right: 67px;
+    width: 708px;
+    padding-left: 40px;
+    padding-right: 37px;
   }
 
   .comment__legend {
@@ -92,6 +93,12 @@
     margin-left: 0;
 
     text-align: left;
+
+    &:active,
+    &:focus {
+      padding-left: 19px;
+      padding-top: 14px;
+    }
   }
 }
 
@@ -107,16 +114,13 @@
   }
 
   .comment__wrapper {
-    width: 1300px;
-    padding-left: 9px;
-    padding-right: 72px;
+    width: 1220px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .comment__legend {
-    margin-left: -9px;
-  }
-
-  .comment__input {
-    margin-left: 32px;
+    margin-left: -39px;
+    padding-left: 38px;
   }
 }

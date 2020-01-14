@@ -98,7 +98,7 @@
 @media (min-width: $desktop-width) {
   .example {
     background: linear-gradient(#ffffff 0, #ffffff 135px, transparent 135px),
-      linear-gradient(to left, #eaeaea 0, #eaeaea 28%, $bg-color 28%);
+      linear-gradient(to left, #eaeaea 0, #eaeaea calc(50% - 325px), $bg-color calc(50% - 325px));
   }
 
   .example__wrapper {

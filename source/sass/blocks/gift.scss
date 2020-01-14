@@ -18,7 +18,7 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-color: #68b738;
   background-repeat: no-repeat;
-  background-size: 280px 289px;
+  background-size: cover;
 
   font-size: 16px;
   line-height: 20px;
@@ -67,7 +67,7 @@
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-color: #68b738;
     background-repeat: no-repeat;
-    background-size: 708px 200px;
+    background-size: cover;
 
     &::before {
       left: 91px;
@@ -99,7 +99,7 @@
 
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 245px 289px;
+    background-size: cover;
 
     &::before {
       left: 96px;

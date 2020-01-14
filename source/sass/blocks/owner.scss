@@ -76,6 +76,7 @@
   &:focus,
   &:active {
     border: 2px solid #444444;
+    padding-left: 14px;
   }
 }
 
@@ -132,8 +133,8 @@
   }
 
   .owner__wrapper {
-    width: 768px;
-    padding: 3px 11px 0 30px;
+    width: 738px;
+    padding: 3px 11px 0 15px;
     margin: 0 auto;
   }
 
@@ -149,7 +150,7 @@
   .owner__list {
     min-height: 125px;
     padding-left: 41px;
-    padding-right: 54px;
+    padding-right: 37px;
   }
 
   .owner__item:not(:last-child) {
@@ -168,6 +169,11 @@
   .owner__input {
     min-height: 52px;
     padding-left: 22px;
+
+    &:focus,
+    &:active {
+      padding-left: 21px;
+    }
   }
 
   .owner__input--email + svg {
@@ -194,15 +200,15 @@
   }
 
   .owner__wrapper {
-    width: 1300px;
-    padding: 0 11px 0 7px;
+    width: 1220px;
+    padding: 0;
     margin: 0 auto;
   }
 
   .owner__legend {
-    padding-left: 32px;
+    padding-left: 36px;
     margin-top: -26px;
-    margin-left: 0;
+    margin-left: -37px;
     width: 592px;
   }
 
@@ -227,13 +233,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
     min-height: 52px;
-    padding-right: 29px;
-    padding-left: 32px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .owner__input {
     width: 486px;
     padding-left: 19px;
+
+    &:focus,
+    &:active {
+      padding-left: 18px;
+    }
   }
 
   .owner__input--tel {

@@ -9,7 +9,7 @@
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
-  </head>
+</head>
 
 <body>
 
@@ -178,8 +178,8 @@
         <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
         <source media="(min-width:1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
         <source media="(min-width:768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-        <img class="page-footer__static-map" src="img/bg-map-mobile@1x.png"
-          srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="Карта с местоположением магазина">
+        <img class="page-footer__static-map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+          width="320" height="362" alt="Карта с местоположением магазина">
       </picture>
       <iframe class="page-footer__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1574330837908!5m2!1sru!2sru"
@@ -213,14 +213,12 @@
           </li>
 
         </ul>
-        <div class="page-footer__credit credit">
-          <a class="credit__link" href="https://htmlacademy.ru/intensive/adaptive">
-            HTML Academy
-            <svg width="26.943" height="34.09">
-              <use xlink:href="img/sprite.svg#icon-htmlacademy-svg"></use>
-            </svg>
-          </a>
-        </div>
+        <a class="page-footer__credit credit" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+          <svg width="26.943" height="34.09">
+            <use xlink:href="img/sprite.svg#icon-htmlacademy-svg"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
@@ -232,8 +230,11 @@
 
   </script>
   <script src="js/picturefill.min.js" async=""></script>
-  <script src ="js/svg4everybody.js"></script>
-  <script>svg4everybody();</script>
+  <script src="js/svg4everybody.js"></script>
+  <script>
+    svg4everybody();
+
+  </script>
 </body>
 
 </html>

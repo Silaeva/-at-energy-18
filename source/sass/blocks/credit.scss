@@ -1,12 +1,8 @@
 .credit {
-  padding-top: 20px;
-}
-
-.credit__link {
   display: flex;
   align-items: center;
   width: 280px;
-  padding-top: 0;
+  padding-top: 20px;
 
   font-size: 16px;
   line-height: 16px;
@@ -19,12 +15,12 @@
   }
 }
 
-.credit__link:hover svg,
-.credit__link:focus svg {
+.credit:hover svg,
+.credit:focus svg {
   fill: #68b738;
 }
 
-.credit__link svg {
+.credit svg {
   margin-left: auto;
   width: 27px;
   height: 34px;
@@ -41,9 +37,6 @@
   .credit {
     padding: 0;
     margin-left: auto;
-  }
-
-  .credit__link {
     width: 162px;
   }
 }
