@@ -97,9 +97,29 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(#ffffff 0, #ffffff 135px, transparent 135px),
-      linear-gradient(to left, #eaeaea 0, #eaeaea calc(50% - 325px), $bg-color calc(50% - 325px));
+    position: relative;
+    z-index: 5;
+
+    background: linear-gradient(#ffffff 0, #ffffff 135px, $bg-color 135px);
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      z-index: 6;
+      bottom: 0;
+      right: 0;
+      width: calc(50% - 325px);
+      height: calc(100% - 135px);
+      background-color: #eaeaea;
+    }
   }
+
+  /*.example {
+    background: linear-gradient(#ffffff 0, #ffffff 135px, transparent 135px),
+    linear-gradient(to left, #eaeaea 0, #eaeaea calc(50% - 325px), $bg-color calc(50% - 325px));
+   } не работает в ИЕ*/
+
 
   .example__wrapper {
     flex-direction: row;
@@ -115,6 +135,7 @@
   }
 
   .example__title {
+    width: 570px;
     margin-bottom: 145px;
   }
 

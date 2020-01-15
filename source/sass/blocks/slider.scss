@@ -61,7 +61,7 @@
 
 .slider__toggle {
   position: absolute;
-  z-index: 2;
+  //z-index: 2;
   top: 7px;
   left: 65px;
 
@@ -176,6 +176,7 @@
 @media (min-width: $desktop-width) {
   .slider {
     width: 650px;
+    z-index: 7;
   }
 
   .slider__image {
