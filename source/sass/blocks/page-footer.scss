@@ -124,6 +124,10 @@
     margin-right: 413px;
   }
 
+  .page-footer__logo-image {
+    margin-top: 5px;
+  }
+
   .page-footer__static-map {
     width: 1440px;
     height: 400px;
@@ -137,7 +141,7 @@
 
   @-moz-document url-prefix("") {
     .page-footer__logo-image {
-      margin-top: 5px;
+      margin-top: 0;
     }
 
     .page-footer__wrapper {

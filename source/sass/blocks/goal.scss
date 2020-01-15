@@ -86,7 +86,7 @@
 
 .goal__sentence {
   @include content-style;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
 
   color: #444444;
 
@@ -118,12 +118,6 @@
 
   &:active {
     opacity: 0.3;
-  }
-}
-
-@-moz-document url-prefix("") {
-  .goal__sentence {
-    padding-bottom: 21px;
   }
 }
 
@@ -194,9 +188,9 @@
   }
 
   .goal__button {
-    padding-top: 57px;
+    padding-top: 55px;
     padding-right: 520px;
-    min-height: 140px;
+    min-height: 136px;
     vertical-align: middle;
 
     font-size: 20px;
@@ -207,14 +201,6 @@
 
   .goal__section:last-child .goal__button {
     background-position: 126px 62px;
-  }
-
-
-  @-moz-document url-prefix("") {
-    .goal__button {
-      padding-top: 55px;
-      min-height: 136px;
-    }
   }
 }
 

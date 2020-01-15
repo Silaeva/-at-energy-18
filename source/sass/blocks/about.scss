@@ -78,7 +78,6 @@
     width: 768px;
     margin: 29px auto 26px;
     padding-left: 30px;
-    //padding-right: 30px;
 
     &::after {
       content: "";
@@ -114,7 +113,7 @@
     min-height: 235px;
     padding-left: 0;
     padding-top: 112px;
-    padding-right: 60px;
+    padding-right: 50px;
     padding-bottom: 0;
     margin-bottom: 82px;
 
@@ -149,7 +148,7 @@
   }
 
   .about__item:not(:nth-of-type(2n)) {
-    margin-right: 60px;
+    margin-right: 84px;
   }
 
   .about__item--powder {

@@ -91,3 +91,9 @@
     height: 28px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding-top: 3px;
+  }
+}
